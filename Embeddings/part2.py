@@ -68,17 +68,16 @@ for i in range(len(final)): # iterate over the rows/regions
         region = patch_list[j] # get the patch
         # Select the cells inside the patch
         cells_inside = useful_data[(region[0][0] <= useful_data['Y_centroid']) & (useful_data['Y_centroid'] < region[0][1]) & (region[1][0] <= useful_data['X_centroid']) & (useful_data['X_centroid'] < region[1][1])]
-        # Count the number of cells inside the patch
         logic_check+= len(cells_inside)
         cell_types = cells_inside['manual_leiden_edges_necrosis_muscle']  # Get the cell types
         cell_counts = Counter(cell_types) # Create a Counter object
         dict_cell = dict(cell_counts) # convert the Counter object to a dictionary
         if len(dict_cell)==0: # if there are no cells in the patch
-             final[str(j+1)][i] = 0  # assign 0
+             final[str(j+1)][i] = 0 
         else: # if there are cells in the patch
             class_index = -1 # create a variable to store the class index
             num_cells = sum(dict_cell.values()) # get the number of cells
-            for key, value in dict_cell.items(): # iterate over the cell types
+            for key, value in dict_cell.items():
               if (value/num_cells) >= (2/3): # if the percentage of the cell type is greater than 2/3
                 class_index = key # assign the class index
             if class_index == -1: #if no class index is assigned
