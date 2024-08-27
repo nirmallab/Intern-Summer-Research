@@ -39,6 +39,7 @@ part3.py: This file is used to generate an h5 file of the embeddings for each pa
 
 mlp.ipynb: This file is incomplete and was intended for building the MLPs that would take in the extracted embeddings and corresponding labels
 
--additional resources: https://github.com/pytorch/examples/blob/main/mnist/main.py & https://github.com/mahmoodlab/MAPS/blob/main/maps/cell_phenotyping/networks.py
+-additional resources: https://github.com/pytorch/examples/blob/main/mnist/main.py & 
+https://github.com/mahmoodlab/MAPS/blob/main/maps/cell_phenotyping/networks.py
 
 
