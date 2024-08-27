@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-#specify duration, ram, gpus, nodes, location of error & log file, name of job, and partition which is tied with duration
+#specify duration, ram memory size, gpus, nodes, location of error & log file, name of job, and partition which is tied with duration
 
 #SBATCH --partition=Medium
 #SBATCH --job-name=large_job
