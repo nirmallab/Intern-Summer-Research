@@ -1,6 +1,6 @@
 How To Guide:
 
-Server Code
+*Server Code*
 
 ERISXdl Example Job Submission.md & GPU Usage Guide.md: Both these files offer information on how to interface with ERISXdl (Signing in ERIS, setting up container/podman, and running jobs)
 
@@ -12,7 +12,7 @@ job.sh: This file was the bash script that the node.sh called to check gpu count
 
 erisxdl.dockerfile: This file was the docker file used to build the container pushed onto harbor specified in node.sh
 
-Preprocessing
+*Preprocessing*
 
 download_models.ipynb: This file is for downloading the three vision transformer models locally 
 
@@ -22,14 +22,14 @@ rescale.py: This file is a python file for rescaling the H&E image
 
 make_balanced.py: Same description to the one above except the number of entries for each class was upper bounded by the class with median number of entries (eg. if the class with the median number of entries has 100 entries in the entire data then no class can have more than 100 entries)
 
-Fine Tuning code
+*Fine Tuning*
 
 mahm_script.py & micro_script.py: These files are for fine tuning the models from Mahmood’s lab (UNI) and Microsoft (Gigapath). The framework was set up with PyLightning but aside from freezing all the layers (except an added linear layer for classification) all the 
 parameters used are just generic initializations
 
 vit_cell_script.py: This file is for fine tuning the model from Google trained on natural images (google/vit-base-patch16-224). The framework was set up with HuggingFace Transformer library but aside from freezing all the layers (except an added linear layer for classification) all the parameters used are just generic initializations
 
-Extracting embedding code
+*Extracting embeddings*
 
 part1.py: This file is used to produce an h5 file that contains the images of the 224x224 regions in H&E with cells inside of them as well as a csv that contains the information about the region (total number of cells in region and number of each cell type in the region)
 
