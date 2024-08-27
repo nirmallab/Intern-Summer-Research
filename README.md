@@ -3,7 +3,6 @@ How To Guide:
 *Server Code*
 
 ERISXdl Example Job Submission.md & GPU Usage Guide.md: Both these files offer information on how to interface with ERISXdl (Signing in ERIS, setting up container/podman, and running jobs)
-
 -additional resources: https://rc.partners.org/kb/article/3719 & https://rc.partners.org/kb/article/3718
 
 node.sh: This file was the bash script for requesting and setting up a node from the ERISXdl server (CPU, GPU, Time, Container, the Bash script to run, etc)
@@ -38,7 +37,6 @@ part2.py: This file is used to a csv that contains the information for each patc
 part3.py: This file is used to generate an h5 file of the embeddings for each patch, a csv that holds further information for each extracted patch embedding (patch coordinates, label,etc), and filters the regions further by eliminating those where a quarter or more of the image of the region is whitespace 
 
 mlp.ipynb: This file is incomplete and was intended for building the MLPs that would take in the extracted embeddings and corresponding labels
-
 -additional resources: https://github.com/pytorch/examples/blob/main/mnist/main.py & 
 https://github.com/mahmoodlab/MAPS/blob/main/maps/cell_phenotyping/networks.py
 
