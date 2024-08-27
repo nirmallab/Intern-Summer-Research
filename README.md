@@ -4,7 +4,7 @@ How To Guide:
 
 ERISXdl Example Job Submission.md & GPU Usage Guide.md: Both these files offer information on how to interface with ERISXdl (Signing in ERIS, setting up container/podman, and running jobs)
 
--additional resources: https://rc.partners.org/kb/article/3719 & https://rc.partners.org/kb/article/3718)
+-additional resources: https://rc.partners.org/kb/article/3719 & https://rc.partners.org/kb/article/3718
 
 node.sh: This file was the bash script for requesting and setting up a node from the ERISXdl server (CPU, GPU, Time, Container, the Bash script to run, etc)
 
